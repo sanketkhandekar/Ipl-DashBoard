@@ -4,11 +4,13 @@ import codeonlycode.ipldashboard.model.Team;
 import codeonlycode.ipldashboard.repositry.MatchRepository;
 import codeonlycode.ipldashboard.repositry.TeamRepository;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
     private final TeamRepository teamRepository;
