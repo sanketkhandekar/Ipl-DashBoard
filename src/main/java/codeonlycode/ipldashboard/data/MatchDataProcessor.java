@@ -40,6 +40,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
         match.setResultMargin(matchData.getResult_margin());
         match.setUmpire1(matchData.getUmpire1());
         match.setUmpire2(matchData.getUmpire2());
+        match.setMatchWinner(matchData.getWinner());
 
         log.info("Converting (" + matchData + ") into (" + match + ")");
 
