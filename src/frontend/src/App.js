@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
+
 import "./App.scss";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { TeamPage } from "./pages/TeamPage";
 import { MatchPage } from "./pages/MatchPage";
 import { HomePage } from "./pages/HomePage";

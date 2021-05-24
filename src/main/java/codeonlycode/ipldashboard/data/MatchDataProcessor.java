@@ -42,6 +42,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
         match.setUmpire2(matchData.getUmpire2());
         match.setMatchWinner(matchData.getWinner());
 
+        if (log.isDebugEnabled())
         log.info("Converting (" + matchData + ") into (" + match + ")");
 
         return match;
